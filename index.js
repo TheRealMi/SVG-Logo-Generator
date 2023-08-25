@@ -21,6 +21,7 @@ const inquirer = require("inquirer")
 const fs = require("fs")
 
 inquirer
+//Questions
     .prompt([
         {
             type: "input",
@@ -54,28 +55,35 @@ inquirer
     ])
     .then(response => {
         if (response.shape === "Circle") {
+            //Create new circle object using Circle constructor
             const circle = new Circle();
+            //Set circle properties
             circle.setTextColor(response.textColor);
             circle.setText(response.text);
             circle.setShapeColor(response.shapeColor);
+            //create "logo.svg" file in "examples" folder using circle's render function
             fs.writeFile("./examples/logo.svg", circle.render(), (err) => { 
                 console.log("Generated logo.svg") })
         } else if (response.shape === "Triangle") {
+            //Create new triangle object using Triangle constructor
             const triangle = new Triangle();
+            //Set triangle properties
             triangle.setTextColor(response.textColor);
             triangle.setText(response.text);
             triangle.setShapeColor(response.shapeColor);
+            //create "logo.svg" file in "examples" folder using triangle's render function
             fs.writeFile("./examples/logo.svg", triangle.render(), (err) => { 
                 console.log("Generated logo.svg") })
         } else if (response.shape === "Square") {
+            //Create new square object using Square constructor
             const square = new Square();
+            //Set square properties
             square.setTextColor(response.textColor);
             square.setText(response.text);
             square.setShapeColor(response.shapeColor);
+            //create "logo.svg" file in "examples" folder using square's render function
             fs.writeFile("./examples/logo.svg", square.render(), (err) => { 
                 console.log("Generated logo.svg");
-                console.log(square.textColor);
-                console.log(square.shapeColor);
             })
         }
     })
