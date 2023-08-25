@@ -25,8 +25,12 @@ https://github.com/TheRealMi/SVG-Logo-Generator
 5. Find your brand new logo.svg file located in the "examples" folder
 
 Watch the video below to see a walkthrough of the application:
-![Application screenshot]<a href="">(./images/Screenshot.PNG)</a>
+<a href="https://watch.screencastify.com/v/S7sqbkbTgmPE8JI98nPA">![Application screenshot](./images/screenshot.PNG)()</a>
 
+
+Here is an example of what your SVG might look like:
+
+![SVG Example](./images/SVGexample.PNG)
 
 ## Credits
 
